@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+
+    background-color: rgb(0, 0, 0);
+  
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    padding: 0px 150px;
+    
+    background-color: rgb(99, 24, 24);
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.container-svg-nav{
+    cursor: pointer;
+    padding: 0px 15px;
+
+}
+
+.li-account{
+list-style: none;
+width: 100%;
+padding: 10px;
+
+cursor: pointer;
+
+}
+
+.li-account:hover{
+    background-color: black ;
+   
+}
+
+.li-account:hover a{
+color:  rgb(99, 24, 24);;
+   
+}
+
+#criar-conta{
+    margin-top: 15px;
+}
+
+
+.nav-account{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+  
+}
+
+
+.svg-nav{
+fill: black;
+    padding: 0px 5px;
+}
+
+.container-account-cart {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+ 
+}
+
+
+.container-account-drop{
+    right: 245px;
+    top: 130px;
+    position: absolute;
+    background-color:  rgb(99, 24, 24) ;
+    border: black solid 2px;
+
+}
+
+
+
+
+@media screen and (max-width: 1080px) {
+.container-nav{
+    padding: 0px 50px;
+}
+
+.container-account-drop{
+    right: 140px;
+    top: 130px;
+}
+}
+
+@media screen and (max-width: 620px) {
+    .container-nav{
+        padding: 0px 20px;
+    }
+
+    .container-svg-nav{
+      
+        padding: 0px 0px;
+    
+    }
+
+    .titulo-nav{
+        font-size: 23px;
+    }
+
+    .svg-nav{
+       height: 45px ;
+       width:  45px ;
+        }
+
+   
+
+}
