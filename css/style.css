@@ -302,18 +302,18 @@ fill: white;
 @media screen and (max-width: 585px) {
 
 .container-nav{
-padding: 15px 10px;
+padding: 30px 10px;
 }
 
 .titulo-nav{
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .svg-nav{
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
 }
-.container-rastreio{
+#rastreio{
     display: none;
 }
 }
