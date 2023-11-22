@@ -302,11 +302,16 @@ fill: white;
 @media screen and (max-width: 585px) {
 
 .container-nav{
-padding: 15px 20px;
+padding: 15px 10px;
 }
 
 .titulo-nav{
-    font-size: 19px;
+    font-size: 15px;
+}
+
+.svg-nav{
+    width: 30px;
+    height: 30px;
 }
 
 }
@@ -324,9 +329,6 @@ padding: 15px 20px;
      
     }
 
-    .container-nav{
-        padding: 15px 15px;
-        }
-        
+
     
 }
