@@ -313,7 +313,9 @@ padding: 15px 10px;
     width: 30px;
     height: 30px;
 }
-
+.container-rastreio{
+    display: none;
+}
 }
 
 
