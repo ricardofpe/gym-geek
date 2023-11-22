@@ -310,11 +310,18 @@ padding: 30px 10px;
 }
 
 .svg-nav{
-    width: 38px;
-    height: 38px;
+    width: 37px;
+    height: 37px;
 }
 #rastreio{
     display: none;
+}
+
+.logo{
+      
+    margin-left: 20px;
+
+ 
 }
 }
 
