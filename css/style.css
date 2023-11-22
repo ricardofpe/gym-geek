@@ -8,49 +8,103 @@ body{
     margin: 0;
     height: 100%;
 
-    background-color: rgb(0, 0, 0);
+    background-color: white;
   
 }
 
 .container-nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
+
+ 
     width: 100%;
     position: fixed;
-    padding: 0px 150px;
-    
-    background-color: rgb(99, 24, 24);
+    padding: 10px 250px;
+    flex-direction: column;
+    background-color: black;
     border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.container-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+
+}
+
+.titulo-nav{
+    margin-bottom: 0;
+    color: white;
+}
+
+
+.titulo-nav:hover{
+    color:#ffdd6b; ;
+}
+
+.search-container {
+    display: flex;
+    width: 100%;
+    margin: 10px 50px;
+    max-width: 550px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    background-color: #f8f8f8;
 }
 
 .container-svg-nav{
     cursor: pointer;
     padding: 0px 15px;
+  
 
 }
 
-.li-account{
-list-style: none;
-width: 100%;
-padding: 10px;
-
-cursor: pointer;
+.container-svg-nav a{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
 
 }
 
-.li-account:hover{
-    background-color: black ;
-   
+.span-rastreio{
+    font-weight: 600;
+    font-size: 18px;
+    min-width: 100%;
+
+
+
+    color: white;
 }
 
-.li-account:hover a{
-color:  rgb(99, 24, 24);;
-   
-}
 
-#criar-conta{
-    margin-top: 15px;
+.span-rastreio:hover{
+    color: #ffdd6b;
+
 }
 
 
@@ -62,9 +116,16 @@ color:  rgb(99, 24, 24);;
 }
 
 
+.container-rastreio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .svg-nav{
-fill: black;
+fill: white;
     padding: 0px 5px;
+    margin: 10px 0px;
 }
 
 .container-account-cart {
@@ -76,49 +137,196 @@ fill: black;
 }
 
 
-.container-account-drop{
-    right: 245px;
-    top: 130px;
-    position: absolute;
-    background-color:  rgb(99, 24, 24) ;
-    border: black solid 2px;
+#search-responsive{
+    display: none;
+}
 
+.titulo-nav{
+
+}
+
+.container-catalogo{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+.container-catalogo a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+
+.container-catalogo a:hover{
+    color:#ffdd6b;;
 }
 
 
 
+#menu-responsive{
+    display: none;
+}
 
-@media screen and (max-width: 1080px) {
+
+
+@media screen and (max-width: 1670px) {
 .container-nav{
-    padding: 0px 50px;
+    padding: 10px 170px;
 }
 
-.container-account-drop{
-    right: 140px;
-    top: 130px;
-}
+
 }
 
-@media screen and (max-width: 620px) {
+
+@media screen and (max-width: 1500px) {
+
+
     .container-nav{
-        padding: 0px 20px;
+            padding: 10px 120px;
+        
     }
 
-    .container-svg-nav{
-      
-        padding: 0px 0px;
-    
+    .search-container{
+        max-width: 400px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1250px) {
+
+
+.span-rastreio{
+    margin-right: 0 !important;
+}
+
+
+.container-nav{
+    padding: 10px 70px;
+}
+
+}
+
+
+
+@media screen and (max-width: 1100px) {
+
+
+    .container-nav{
+        padding: 10px 40px;
     }
 
     .titulo-nav{
-        font-size: 23px;
+        font-size: 21px;
+    }
+.search-container{
+    max-width: 350px;
+}
+
+
+
+
+}
+
+
+@media screen and (max-width: 985px) {
+
+.search-container{
+    display: none;
+}
+
+.span-rastreio{
+    display: none;
+}
+
+#search-responsive{
+    display: flex;
+}
+
+#search:hover{
+    fill: #ffdd6b; ;
+}
+
+
+.container-nav{
+    padding: 10px 70px;
+}
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+.container-catalogo{
+    display: none;
+}
+
+
+.container-nav{
+    padding: 15px 70px;
+}
+
+
+#menu-responsive{
+    display: flex;
+}
+
+#menu:hover{
+    fill: rgb(255, 221, 107); ;
+}
+
+.logo{
+    justify-content: start;
+    width: 100%;
+    margin-left: 30px;
+
+ 
+}
+
+
+
+.container-nav{
+    padding: 15px 40px;
+}
+
+
+
+}
+
+
+@media screen and (max-width: 585px) {
+
+.container-nav{
+padding: 15px 20px;
+}
+
+.titulo-nav{
+    font-size: 19px;
+}
+
+}
+
+
+
+@media screen and (max-width: 540px) {
+
+
+
+    .logo{
+      
+        margin-left: 10px;
+    
+     
     }
 
-    .svg-nav{
-       height: 45px ;
-       width:  45px ;
+    .container-nav{
+        padding: 15px 15px;
         }
-
-   
-
+        
+    
 }
