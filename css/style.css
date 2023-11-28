@@ -7,19 +7,30 @@ body{
     padding: 0;
     margin: 0;
     height: 100%;
+    
 
+ 
     background-color: white;
   
+}
+
+/* HEADER  */
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
 }
 
 .container-nav {
     display: flex;
     justify-content: space-between;
-    z-index: 10;
 
- 
+
+
     width: 100%;
-    position: fixed;
+
     padding: 10px 250px;
     flex-direction: column;
     background-color: black;
@@ -141,9 +152,7 @@ fill: white;
     display: none;
 }
 
-.titulo-nav{
 
-}
 
 .container-catalogo{
     align-items: center;
@@ -209,16 +218,17 @@ fill: white;
     width: 40%;
     position: absolute;
     right: 0px;
-    background-color: rgb(24, 23, 23);
+    background-color: #181717;
     padding-top: 100px;
 
 }
+
 
 .container-account-tab a{
 
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px;
     
 
@@ -234,6 +244,90 @@ fill: white;
     padding: 10px;
     
 }
+.svg-drop{
+    fill: white;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+.svg-drop2{
+    fill: white;
+    padding: 0px 5px;
+    padding-bottom: 10px;
+    cursor: pointer;
+
+  
+}
+
+
+
+/* SECTION COLEÇÕES  */
+
+section{
+   padding-top: 165px;
+}
+
+.container-colecoes-father{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    padding: 100px;
+    
+
+}
+
+.container-colecoes-father img{
+    width: 11rem;
+    padding-bottom: 15px;
+
+    transition: transform 0.3s;
+}
+
+.container-colecoes-father p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.container-coleoces-position{
+    flex-direction: row;
+    display: flex;
+}
+
+.container-colecoes{
+    flex-direction: column;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+
+
+    transition: color 0.3s;
+}
+
+.container-colecoes:hover{
+
+    color: #c2a033;
+
+}
+
+.container-colecoes:hover img{
+    
+    transform: scale(1.1); 
+}
+
+
+
+.titulo-colecoes{
+    margin-bottom: 40px;
+    border-bottom: solid 2px #181717;
+    padding: 0px 10px;
+    padding-bottom: 5px;
+
+}
+
 
 
 @media screen and (max-width: 1670px) {
@@ -309,10 +403,6 @@ fill: white;
 
 #search-responsive{
     display: flex;
-}
-
-#search:hover{
-    fill: #ffdd6b; ;
 }
 
 
