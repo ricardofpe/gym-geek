@@ -258,6 +258,52 @@ fill: white;
   
 }
 
+.container-main-fale-conosco{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+
+    padding-top: 200px;
+}
+
+#form-send{
+    width: 30%;
+    
+}
+
+#form-send input{
+    border: 2px gray solid;
+}
+
+#form-send textarea{
+    border: 2px gray solid;
+}
+
+.titulo-fale-conosco{
+    padding: 40px 0px;
+    font-size: 32px;
+}
+
+#button-send{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border: black 2px solid;
+    padding: 3px 10px;
+    margin-top: 20px;
+}
+
+
+#button-send:hover{
+    background-color: black;
+    color: white;
+}
+
 
 
 /* SECTION COLEÇÕES  */
@@ -644,6 +690,11 @@ width: 9rem;
 font-size: 17px;
 }
 
+#form-send{
+    width: 40%;
+    
+}
+
 }
 
 @media screen and (max-width: 1100px) {
@@ -757,6 +808,22 @@ section{
     margin: 0px 50px;
 }
 
+
+
+#form-send{
+    width: 60%;
+    
+}
+
+.titulo-fale-conosco{
+    padding: 0px 0px;
+    padding-bottom: 30px;
+    font-size: 28px;
+}
+
+.container-main-fale-conosco{
+    padding-top: 170px;
+}
 
 }
 

@@ -1,0 +1,119 @@
+
+.login-container {
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+   width: 30%;
+   margin-top: 100px;
+  }
+
+
+  .login-header {
+    background-color: white;
+    color: black;
+    width: 100%;
+   padding: 10px 0px;
+    text-align: center;
+
+  }
+
+  .login-body {
+    padding: 40px 60px;
+    width: 100%;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  }
+
+  label {
+    display: block;
+    width: 20%;
+    font-weight: bold;
+    color: white;
+    margin-right: 15px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .login-button {
+    background-color:white;
+    color: black;
+    padding: 10px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 45%;
+
+  }
+
+
+
+  .entrar-registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .entrar-registro a{
+    text-decoration: none;
+    color: white;
+    margin-top: 40px;
+ 
+  }
+
+
+
+
+  @media screen and (max-width: 1670px) {
+
+
+    .login-container{
+margin: none;
+width: 40%;
+    }
+
+  }
+
+
+  
+
+  @media screen and (max-width: 1250px) {
+
+
+    .login-container{
+
+width: 60%;
+    }
+
+  }
+
+
+  @media screen and (max-width: 800px) {
+
+
+    .login-container{
+
+width: 80%;
+    }
+
+  }
