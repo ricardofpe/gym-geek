@@ -11,20 +11,95 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/style-login-registro.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
+
 <body>
-    
-<header>
+
+
+    <header>
+
+        <div class="container-nav">
+            <div class="container-header">
+
+           
+                <div id="logo-login" class="logo">
+                    <a style="text-decoration: none;"  href="../../index.html">
+                        <h4 class="titulo-nav">LOJA GYM</h4>
+                    </a>
+
+                </div>
+
+        </div>
+        </div>
+    </header>
+<main>
+
+    <div class="login-container">
+        <div class="login-header">
+          <h2>Registro</h2>
+        </div>
+        <div class="login-body">
+            <div class="form-group">
+                <label for="password">Nome:</label>
+                <input type="text" id="username" placeholder="Digite seu nome" required>
+              </div>
+          <div class="form-group">
+            <label for="username">Email:</label>
+            <input type="text" id="email" placeholder="Digite seu email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Senha:</label>
+            <input type="password" id="password" placeholder="Digite sua senha" required>
+          </div>
+
+          <div class="entrar-registro">
+          <button class="login-button" onclick="registro()">Registre-se</button>
+          
+
+          <a href="login.html"><span class="span-login">Já tem Login? Faça seu Login</span></a>
+        </div>
+        </div>
+      </div>
 
 
 
-    
-</header>
+</main>
+
+
+    <footer>
+        <div class="footer-content">
+          
+            <div class="footer-section">
+        
+                <ul class="p-0">
+                    <li><a href="../../index.html">Início</a></li>
+                    <li><a href="#">Produtos</a></li>
+      
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section"> 
+        
+                <ul class="p-0">
+                    <li><a class="fab fa-facebook" href="#"><span>Facebook</a></span></li>
+                    <li><a class="fab fa-instagram" href="#"><span>Instagram</a></span></li>
+                    <li><a class="fab fa-twitter" href="#"><span>Twitter</a></span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-last">
+        <p class="text-last">&copy; 2023 LOJA GYM. Todos os direitos reservados.</p>
+    </div>
+    </footer>
 
 
 
+    <script src="../../js/script.js"></script>
 </body>
+
 </html>

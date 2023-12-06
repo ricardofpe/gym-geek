@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/style-login-registro.css">
 
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
@@ -26,70 +27,21 @@
         <div class="container-nav">
             <div class="container-header">
 
-                <div class="container-svg-nav" id="menu-responsive">
-                    <svg id="menu" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-                        class="svg-nav" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-                    </svg>
-                </div>
+          
 
-                <div class="logo">
+                <div id="logo-login" class="logo">
                     <a style="text-decoration: none;"  href="../../index.html">
                         <h4 class="titulo-nav">LOJA GYM</h4>
                     </a>
 
                 </div>
 
-                <div class="search-container">
-                    <input type="text" class="search-input" placeholder="Pesquisar...">
-                    <div class="search-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-search"
-                            viewBox="0 0 16 16">
-                            <path
-                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                        </svg>
-                    </div>
-                </div>
+              
 
-                <div class="container-account-cart">
-
-
-                    <div class="container-svg-nav" id="search-responsive">
-                        <svg id="search" class="svg-nav" xmlns="http://www.w3.org/2000/svg" width="35" height="35"
-                            fill="white" class="bi bi-search" viewBox="0 0 16 16">
-                            <path
-                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                        </svg>
-                    </div>
-
-                    <div class="container-svg-nav" id="rastreio">
-                        <div class="container-rastreio">
-                            <a style="text-decoration: none;" href=""><img style="margin-right: 10px;"
-                                    src="../../img/caminhao-de-entrega.png" width="35px" alt="">
-                                <span class="span-rastreio" style="margin-right:50px;">Rastrear Pedido</span></a>
-                        </div>
-                    </div>
-
-                    <div class="container-svg-nav" id="svg-account">
-                        <a style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                                fill="currentColor" class="svg-nav" viewBox="0 0 16 16">
-                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                                <path fill-rule="evenodd"
-                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                            </svg></a>
-                    </div>
-
-                    <div class="container-svg-nav">
-                        <a style="text-decoration: none;" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="40"
-                                height="40" fill="currentColor" class="svg-nav" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                            </svg></a>
-                    </div>
-                </div>
-            </div>
+               
         </div>
+        </div>
+    </header>
 <main>
 
     <div class="login-container">
@@ -99,7 +51,7 @@
         <div class="login-body">
           <div class="form-group">
             <label for="username">Email:</label>
-            <input type="text" id="username" placeholder="Digite seu email" required>
+            <input type="text" id="email" placeholder="Digite seu email" required>
           </div>
           <div class="form-group">
             <label for="password">Senha:</label>
@@ -110,7 +62,7 @@
           <button class="login-button" onclick="login()">Entrar</button>
           
 
-          <a href=""><span>Não tem Login? Registre-se</span></a>
+          <a href="registro.html"><span class="span-login">Não tem Login? Registre-se</span></a>
         </div>
         </div>
       </div>
@@ -138,6 +90,7 @@
                     <li><a class="fab fa-facebook" href="#"><span>Facebook</a></span></li>
                     <li><a class="fab fa-instagram" href="#"><span>Instagram</a></span></li>
                     <li><a class="fab fa-twitter" href="#"><span>Twitter</a></span></li>
+                    
                 </ul>
             </div>
         </div>
@@ -145,6 +98,8 @@
         <p class="text-last">&copy; 2023 LOJA GYM. Todos os direitos reservados.</p>
     </div>
     </footer>
+
+
 
 
 

@@ -825,6 +825,11 @@ section{
     padding-top: 170px;
 }
 
+
+#svg-account a{
+ pointer-events: none;
+}
+
 }
 
 
@@ -888,6 +893,11 @@ width: 100%;
             margin: 0px 20px;
         }
         
+
+        #form-send{
+            width: 80%;
+            
+        }
 
 }
 
