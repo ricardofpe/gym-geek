@@ -162,4 +162,11 @@ width: 80%;
 .titulo-nav{
   font-size: 22px;
 }
+
+.login-body{
+  padding: 30px 10px;
+}
+.login-container{
+  width: 90%;
+}
 }
