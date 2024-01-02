@@ -51,9 +51,9 @@ main{
 .p-parcelamento{
     color: gray;
 }
- 
+
 .img-selecionar{
-    border: black 1px solid;
+    border: #1a1a19 1px solid;
     border-radius: 10px;
     cursor: pointer;
 
@@ -84,6 +84,33 @@ main{
     border: 1px solid red;
 }
 
+.container-medidas{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    
+}
+
+.container-medidas span{
+    color: black;
+    margin-left: 3px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.container-quantidade{
+    display: flex;
+}
+
+.input-quantidade{
+    width: 3.5rem;
+    padding-left: 0.8rem;
+
+
+}
+
 .container-info-produto{
     padding-left: 30px;
     display: flex;
@@ -92,7 +119,7 @@ main{
 }
 
 .button-comprar{
-background-color: black;
+background-color: #1a1a19;
 color: white;
 border: solid 2px white;
 border-radius: 20px;
@@ -111,7 +138,7 @@ justify-content: center;
 .button-carrinho{
     background-color: white;
     color: black;
-    border: solid 2px black;
+    border: solid 2px #1a1a19;
     border-radius: 20px;
     font-size: 20px;
     font-weight: 600;
@@ -138,3 +165,23 @@ width: 100%;
 .buttons-buy{
     margin-top: 10px;
 }
+
+.container-cep{
+    margin-top: 20px;
+  
+}
+
+.button-cep{
+    background-color: #1a1a19;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
+}
+

@@ -33,7 +33,7 @@ header{
 
     padding: 10px 250px;
     flex-direction: column;
-    background-color: black;
+    background-color: #1a1a19;
     border-bottom: 1px solid rgb(0, 0, 0);
 }
 
@@ -293,14 +293,14 @@ fill: white;
     border-radius: 20px;
     font-size: 18px;
     font-weight: 600;
-    border: black 2px solid;
+    border: #1a1a19 2px solid;
     padding: 3px 10px;
     margin-top: 20px;
 }
 
 
 #button-send:hover{
-    background-color: black;
+    background-color: #1a1a19;
     color: white;
 }
 
@@ -368,7 +368,7 @@ section{
 
 .titulo-colecoes{
     margin-bottom: 40px;
-    border-bottom: solid 2px #181717;
+    border-bottom: solid 2px #1a1a19;
     padding: 0px 10px;
     padding-bottom: 5px;
 
@@ -434,12 +434,12 @@ section{
     font-weight: 600;
     background-color: white;
     color: black;
-    border: black solid 2px;
+    border: #1a1a19 solid 2px;
 
 }
 
 .container-pags a:hover{
-    background-color: black;
+    background-color: #1a1a19;
     color: white;
 }
 
@@ -467,7 +467,7 @@ font-weight: 600;
 .btn-next{
 background-color: white;
 color: black;
-border: black solid 2px;
+border: #1a1a19 solid 2px;
 border-radius: 3rem;
 font-size: 20px;
 font-weight: 600;
@@ -478,7 +478,7 @@ padding: 10px;
 }
 
 .btn-next:hover{
-    background-color: black;
+    background-color: #1a1a19;
     color: white;
 }
 
@@ -509,7 +509,7 @@ padding: 10px;
 .btn-left{
     background-color: white;
     color: black;
-    border: black solid 2px;
+    border: #1a1a19 solid 2px;
     border-radius: 3rem;
     font-size: 20px;
     font-weight: 600;
@@ -520,7 +520,7 @@ padding: 10px;
     }
  
     .btn-left:hover{
-        background-color: black;
+        background-color: #1a1a19;
         color: white;
     }
     
@@ -534,7 +534,7 @@ padding: 10px;
 
 
 footer {
-    background-color: black;
+    background-color: #1a1a19;
     color: white;
     padding: 20px;
     text-align: center;
