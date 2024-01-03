@@ -50,3 +50,25 @@ document.addEventListener("click", function (event) {
     }
 });
 
+
+
+// SECTION SLIDES //
+
+let currentIndex = 0;
+
+function showSlide(index) {
+  const slides = document.querySelector('.slides');
+  const totalSlides = document.querySelectorAll('.slide').length;
+  index = (index + totalSlides) % totalSlides;
+  currentIndex = index;
+  const translation = -index * 100 + '%';
+  slides.style.transform = 'translateX(' + translation + ')';
+}
+
+function nextSlide() {
+  showSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+  showSlide(currentIndex - 1);
+}

@@ -73,7 +73,7 @@ main{
     border-radius: 15px;
     cursor: pointer;
 
-    padding: 15px;
+    padding: 10px 15px;
     margin: 3px;
 
     font-weight: 600;
@@ -185,3 +185,84 @@ input[type=number]::-webkit-outer-spin-button {
 
 }
 
+
+
+
+/* SECTION DESCRIÇÃO */
+
+.container-descricao{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 0px 200px;
+    padding-top: 80px;
+}
+
+.container-descricao p, li{
+    font-weight: 600;
+}
+
+section{
+    padding-top: 0px !important;
+  
+}
+
+
+.h5-caract{
+    padding-top: 15px;
+}
+
+
+/* SECTION SLIDES */
+
+
+.h4-mais-produtos{
+    padding: 0px 200px;
+    padding-top: 20px;
+}
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 30px;
+  }
+
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide img {
+  width: 320px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  }
+
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+
+  #img-colar-berserk{
+    height: 300px;
+    margin-left: 35px;
+  }
+
+  #img-compressao-aranha{
+    margin-left: 7px;
+  }
