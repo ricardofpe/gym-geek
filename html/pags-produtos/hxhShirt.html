@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="../../css/style-pag-produtos.css">
+    
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -262,23 +265,31 @@
     <div class="slider-container">
         <div class="slides">
           <div class="slide"><img id="img-compressao-aranha" src="../../img/compressao-aranha.webp" alt="Imagem 1">
-            <span>Compressão Aranha</span></div>
+            <span>Compressão Aranha</span>
+        <span>R$69,99</span></div>
         
           <div class="slide"><img src="../../img/compressao-batman.webp" alt="Imagem 2">
-        <span>Compressão Batman</span></div>
+        <span>Compressão Batman</span>
+        <span>R$69,99</span></div>
           <div class="slide"><img src="../../img/bermuda-berserk-black.jpg" alt="Imagem 3">
-        <span>Bermuda Berserk</span></div>
+        <span>Bermuda Berserk</span>
+        <span>R$69,99</span></div>
           <div class="slide"><img src="../../img/compressao-bleach.png" alt="Imagem 4">
-        <span>Compressão Bleach</span></div>
+        <span>Compressão Bleach</span>
+        <span>R$69,99</span></div>
 
           <div class="slide"><img id="img-colar-berserk" src="../../img/colar-berserk-black.png" alt="Imagem 1">
-        <span>Colar Berserk </span></div>
+        <span>Colar Berserk </span>
+        <span>R$24,99</span></div>
           <div class="slide"><img src="../../img/colar-hxh.png" alt="Imagem 2">
-        <span>Colar HxH</span></div>
+        <span>Colar HxH</span>
+        <span>R$24,99</span></div>
           <div class="slide"><img src="../../img/compressao-naruto.png" alt="Imagem 3">
-        <span>Compressão Naruto</span></div>
+        <span>Compressão Naruto</span>
+        <span>R$69,99</span></div>
           <div class="slide"><img src="../../img/pulseira-berserk.png" alt="Imagem 4">
-        <span>Pulseira Berserk</span></div>
+        <span>Pulseira Berserk</span>
+        <span>R$19,99</span></div>
 
           
         </div>
@@ -287,7 +298,7 @@
           
         
         <div class="slider-arrow prev" onclick="prevSlide()">&#10094;</div>
-        <div class="slider-arrow next" onclick="nextSlide()">&#10095;</div>
+        <div id="next" class="slider-arrow next" onclick="nextSlide()">&#10095;</div>
       </div>
 
 

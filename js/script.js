@@ -55,20 +55,33 @@ document.addEventListener("click", function (event) {
 // SECTION SLIDES //
 
 let currentIndex = 0;
+const totalSlides = document.querySelectorAll('.slide').length;
+const slidesPerPart = totalSlides / 2; // Assumindo que você tem duas partes de slides
 
 function showSlide(index) {
   const slides = document.querySelector('.slides');
-  const totalSlides = document.querySelectorAll('.slide').length;
   index = (index + totalSlides) % totalSlides;
   currentIndex = index;
   const translation = -index * 100 + '%';
   slides.style.transform = 'translateX(' + translation + ')';
 }
 
-function nextSlide() {
-  showSlide(currentIndex + 1);
-}
 
+function nextSlide() {
+    if (currentIndex < totalSlides - 1) {
+      showSlide(currentIndex + 1);
+    } else {
+ 
+    }
+  }
 function prevSlide() {
-  showSlide(currentIndex - 1);
+  if (currentIndex > 0) {
+    showSlide(currentIndex - 1);
+  } else {
+
+    if (currentIndex >= slidesPerPart) {
+      showSlide(totalSlides - 1);
+    }
+
+  }
 }
