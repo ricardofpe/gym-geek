@@ -66,22 +66,28 @@ function showSlide(index) {
   slides.style.transform = 'translateX(' + translation + ')';
 }
 
-
 function nextSlide() {
-    if (currentIndex < totalSlides - 1) {
-      showSlide(currentIndex + 1);
-    } else {
- 
-    }
+  currentIndex = (currentIndex + 1) % totalSlides;
+
+  // Se estiver na última parte de slides, retorne à primeira parte
+  if (currentIndex === 1) {
+    currentIndex+ 0.5;
+  }else{
+    currentIndex = 0;
   }
+
+  showSlide(currentIndex);
+}
+
 function prevSlide() {
   if (currentIndex > 0) {
     showSlide(currentIndex - 1);
   } else {
-
+    // Se estiver na segunda parte de slides, retorne à última parte
     if (currentIndex >= slidesPerPart) {
-      showSlide(totalSlides - 1);
+      currentIndex = totalSlides - 1;
     }
 
+    showSlide(currentIndex);
   }
 }
