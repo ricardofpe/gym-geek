@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Gym</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style-pag-produtos.css">
+    
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+
+
+    <header>
+
+        <div class="container-nav">
+            <div class="container-header">
+
+                <div class="container-svg-nav" id="menu-responsive">
+                    <svg id="menu" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="svg-nav" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </div>
+
+                <div class="logo">
+                    <a style="text-decoration: none;"  href="../../index.html">
+                        <h4 class="titulo-nav">LOJA GYM</h4>
+                    </a>
+
+                </div>
+
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Pesquisar...">
+                    <div class="search-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-search"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="container-account-cart">
+
+
+                    <div class="container-svg-nav" id="search-responsive">
+                        <svg id="search" class="svg-nav" xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                            fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </div>
+
+                    <div class="container-svg-nav" id="rastreio">
+                        <div class="container-rastreio">
+                            <a style="text-decoration: none;" href=""><img style="margin-right: 10px;"
+                                    src="../../img/caminhao-de-entrega.png" width="35px" alt="">
+                                <span class="span-rastreio" style="margin-right:50px;">Rastrear Pedido</span></a>
+                        </div>
+                    </div>
+
+                    <div class="container-svg-nav" id="svg-account">
+                        <a href="../../html/login-registro/login.html" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                fill="currentColor" class="svg-nav" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg></a>
+                    </div>
+
+                    <div class="container-svg-nav">
+                        <a style="text-decoration: none;" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="40"
+                                height="40" fill="currentColor" class="svg-nav" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-catalogo">
+
+
+
+                <a href="../../html/compressoes.html">Compressões</a>
+                <a href="../../html/calcas.html">Calças</a>
+                <a href="../../html/colares.html">Colares</a>
+                <a href="../../html/pulseiras.html">Pulseiras</a>
+                <a href="../../html/bermudas.html">Bermudas</a>
+                <a href="../../html/faleconosco.html">Fale Conosco</a>
+
+
+
+
+            </div>
+
+        </div>
+
+
+        <div class="container-menu-tab">
+
+            <ul class="p-0">
+
+                <li><a href="../../html/compressoes.html">Compressões</a></li>
+                <li><a href="../calcas.html">Calças</a></li>
+                <li><a href="../colares.html">Colares</a></li>
+                <li><a href="../pulseiras.html">Pulseiras</a></li>
+                <li><a href="../bermudas.html">Bermudas</a></li>
+                <li><a href="../faleconosco.html">Fale Conosco</a></li>
+
+            </ul>
+
+
+
+        </div>
+
+        <div class="container-account-tab">
+
+
+            <ul class="p-0">
+                <li><svg class="svg-drop" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-person-badge" viewBox="0 3 16 16">
+                        <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path
+                            d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492z" />
+                    </svg><a href="">Meu Perfil</a></li>
+                <li>
+                    <svg class="svg-drop2" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-person-add" viewBox="0 0 16 16">
+                        <path
+                            d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                        <path
+                            d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1z" />
+                    </svg><a href="./html/login-registro/login.html">Login / Registre-se</a>
+                </li>
+                <li><svg class="svg-drop2" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-bag" viewBox="0 0 16 16">
+                        <path
+                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                    </svg><a href="">Pedidos</a></li>
+
+
+            </ul>
+
+
+
+        </div>
+
+
+    </header>
+
+
+
+    <main>
+
+
+<div class="main-produto">
+   
+    <img class="img-compressao-prod" src="../../img/pulseira-halter.jpg" alt="">
+<div class="container-info-produto">
+    <h1 class="h1-prod">Pulseira Halter</h1>
+    <p class="p-preco">Por: R$ 19,99</p>
+    <p class="p-parcelamento">ou 10x de R$ 1,99</p>
+    <p class="p-parcelamento">5% de desconto pagando com Pix</p>
+
+  <img class="img-selecionar" width="80px" src="../../img/pulseira-halter.jpg" alt="">
+  <span class="span-tamanho">Tamanho do Produto:</span>
+  <div class="container-tamanhos">
+    <div class="selecionar-tamanho">Tamanho Único</div>
+
+    
+</div>
+
+<div class="container-medidas">
+    
+<svg style="cursor: pointer;" class="svg-guia-medidas" width="20" height="20"t xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M473.62,116H38.59c-14.13,0-25.59,11.46-25.59,25.59v230.31c0,14.13,11.46,25.59,25.59,25.59H473.62c14.13,0,25.59-11.46,25.59-25.59V141.59c0-14.13-11.46-25.59-25.59-25.59Zm-12.79,243.1H51.38V154.38h63.97v130.51h38.38V154.38h83.17v74.21h38.38v-74.21h70.37v130.51h38.38V154.38h76.77v204.72Z"></path></svg>
+<span style="cursor: pointer;">Guia de Medidas</span>
+</div>
+
+<div class="container-quantidade form-row m-0 align-items-center" data-component="product.quantity">
+    <p>Quantidade:</p>
+    <span class="js-quantity-down form-quantity-icon btn icon-20px font-small" data-component="product.quantity.minus">
+        <svg class="icon-inline mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M248.5,33.1a25.59,25.59,0,0,0-36.2,0L7.5,237.9a25.59,25.59,0,0,0,0,36.2L212.3,478.9a25.6,25.6,0,0,0,36.2-36.2L61.8,256,248.5,69.3A25.59,25.59,0,0,0,248.5,33.1Z"></path></svg>            </span>
+        <div class="form-control-container col px-0" data-component="product.adding-amount">
+        <input type="number" class="input-quantidade js-quantity-input form-control-big form-control-inline" autocorrect="off" autocapitalize="off" pattern="\d*" name="quantity" value="1" min="1" aria-label="Alterar quantidade" data-component="adding-amount.value">
+                        </div>
+            <span class="js-quantity-up form-quantity-icon btn icon-30px font-small" data-component="product.quantity.plus">
+        <svg class="icon-inline mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M7.5,69.3,194.2,256,7.5,442.7a25.6,25.6,0,0,0,36.2,36.2L248.5,274.1a25.59,25.59,0,0,0,0-36.2L43.7,33.1A25.6,25.6,0,0,0,7.5,69.3Z"></path></svg>            </span>
+</div>
+
+    <div class="buttons-buy">
+        <div class="container-button-carrinho">
+    <button class="button-carrinho">Adicionar ao carrinho<svg xmlns="http://www.w3.org/2000/svg" transform="translate(3, 0)" width="20" height="20" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+        <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg></button></div>
+      <div class="container-button-comprar">
+    <button class="button-comprar">Comprar<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" transform="translate(7, 0)" fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5"/>
+        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+      </svg></button></div>
+    </div>
+
+
+    <div class="container-cep">
+    <input type="text" placeholder="Seu CEP">
+    <button class="button-cep">Calcular</button>
+    </div>
+</div>
+</div>
+
+
+
+    </main>
+
+
+    <section>
+
+<div class="container-descricao">
+<h4>Descrição</h4>
+
+<h4>Camiseta de compressão HxH</h4>
+<p>Desempenho Elevado, Conforto Inigualável</p>
+<p>A Camiseta de compressão HxH é a escolha definitiva para atletas que buscam otimizar seu desempenho e maximizar o conforto durante os treinos. Desenvolvida com tecnologia de ponta e materiais premium, esta camiseta oferece suporte muscular, gerenciamento eficiente da umidade e design ergonômico para levar seus treinos a um novo patamar.</p>
+
+<h5 class="h5-caract">Características Principais:</h5>
+
+<ul>
+<li>Compressão Gradual: A compressão graduada oferece suporte estratégico aos grupos musculares, melhorando a circulação sanguínea e reduzindo a fadiga muscular, permitindo treinos mais intensos e duradouros.</li>
+
+<li>Tecido Respirável: Fabricada com um tecido respirável de alta qualidade, a camiseta de compressão HxH mantém seu corpo fresco e seco, mesmo durante os treinos mais intensos. A gestão eficaz da umidade evita o acúmulo de suor, proporcionando uma sensação de frescor constante.</li>
+
+<li>Costuras Flatlock: As costuras flatlock garantem um ajuste suave e sem atritos, minimizando qualquer possibilidade de irritação na pele. Isso torna a camiseta ideal para movimentos amplos e repetitivos.</li>
+
+<li>Design Ergonômico: O design anatômico da Camiseta de compressão HxH se adapta perfeitamente à forma do corpo, proporcionando liberdade de movimento sem restrições. Seu ajuste justo é ideal para uso por baixo de outras peças ou como camada única.</li>
+
+<li>Versatilidade de Uso: Esta camiseta de compressão não é apenas para treinos intensos; é também uma excelente opção para corridas, yoga, ciclismo e diversas atividades esportivas. Vista-se com confiança, sabendo que está investindo em qualidade e desempenho.</li>
+</ul>
+</div>
+
+    </section>
+
+    
+<section>
+
+
+
+    <h4 class="h4-mais-produtos">Mais Produtos:</h4>
+<div class="slider-father">
+    <div class="slider-container">
+        <div class="slides">
+          <div class="slide"><img id="img-compressao-aranha" src="../../img/compressao-aranha.webp" alt="Imagem 1">
+            <span>Compressão Aranha</span>
+        <span>R$69,99</span></div>
+        
+          <div class="slide"><img src="../../img/compressao-batman.webp" alt="Imagem 2">
+        <span>Compressão Batman</span>
+        <span>R$69,99</span></div>
+          <div class="slide"><img src="../../img/bermuda-berserk-black.jpg" alt="Imagem 3">
+        <span>Bermuda Berserk</span>
+        <span>R$69,99</span></div>
+          <div id="slide-bleach" class="slide"><img src="../../img/compressao-bleach.png" alt="Imagem 4">
+        <span>Compressão Bleach</span>
+        <span>R$69,99</span></div>
+
+          <div class="slide"><img id="img-colar-berserk" src="../../img/colar-berserk-black.png" alt="Imagem 1">
+        <span>Colar Berserk </span>
+        <span>R$24,99</span></div>
+          <div class="slide"><img src="../../img/colar-hxh.png" alt="Imagem 2">
+        <span>Colar HxH</span>
+        <span>R$24,99</span></div>
+          <div class="slide"><img id="img-compressao-naruto" src="../../img/compressao-naruto.png" alt="Imagem 3">
+        <span>Compressão Naruto</span>
+        <span>R$69,99</span></div>
+          <div class="slide"><img src="../../img/pulseira-berserk.png" alt="Imagem 4">
+        <span>Pulseira Berserk</span>
+        <span>R$19,99</span></div>
+
+          
+        </div>
+
+          
+     
+      </div>
+
+
+      <div class="slider-arrow prev" onclick="prevSlide()">&#10094;</div>
+      <div id="next" class="slider-arrow next" onclick="nextSlide()">&#10095;</div>
+    </div>
+</section>
+
+
+    <footer>
+        <div class="footer-content">
+          
+            <div class="footer-section">
+        
+                <ul class="p-0">
+                    <li><a href="../../index.html">Início</a></li>
+                    <li><a href="#">Produtos</a></li>
+      
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+        
+                <ul class="p-0">
+                    <li><a class="fab fa-facebook" href="#"><span>Facebook</a></span></li>
+                    <li><a class="fab fa-instagram" href="#"><span>Instagram</a></span></li>
+                    <li><a class="fab fa-twitter" href="#"><span>Twitter</a></span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-last">
+        <p class="text-last">&copy; 2024 LOJA GYM. Todos os direitos reservados.</p>
+    </div>
+    </footer>
+
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>
