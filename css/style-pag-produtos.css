@@ -562,8 +562,19 @@ width: 100%;
 }
 
 #slide-bleach{
-    margin-left: 13px;
+    margin-left: 0px;
 }
+
+
+.prev {
+    left: 4%;
+    
+  }
+
+  .next {
+    right: 4%;
+  }
+
 
 
 }
@@ -588,7 +599,7 @@ width: 100%;
 
 
 #slide-bleach{
-    margin-left: 11px;
+    margin-left: 0px;
 }
 
 }
