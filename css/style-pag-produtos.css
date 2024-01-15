@@ -553,6 +553,7 @@ width: 100%;
     min-height: 130px !important;
     max-height: 130px;
     width: 150px;
+    padding: 0px 25px;
 
 }
 
@@ -561,9 +562,6 @@ width: 100%;
     padding: 0px 5px;
 }
 
-#slide-bleach{
-    margin-left: 0px;
-}
 
 
 .prev {

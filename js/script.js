@@ -91,3 +91,31 @@ function prevSlide() {
     showSlide(currentIndex);
   }
 }
+
+
+// Search Produtos //
+
+   
+    var produtos = document.querySelectorAll('.produto');
+
+
+    document.getElementById('searchInput').addEventListener('input', function () {
+
+        var termoPesquisa = this.value.toLowerCase();
+
+
+        produtos.forEach(function (produto) {
+   
+            var textoProduto = produto.textContent.toLowerCase();
+
+     
+            if (textoProduto.includes(termoPesquisa)) {
+               
+                produto.style.display = 'flex'; 
+            } else {
+              
+                produto.style.display = 'none';
+            }
+        });
+    });
+
