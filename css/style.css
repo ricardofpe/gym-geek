@@ -750,6 +750,8 @@ font-size: 17px;
 
 @media screen and (max-width: 800px) {
 
+
+    
 .container-catalogo{
     display: none;
 }
@@ -818,7 +820,7 @@ section{
 .titulo-fale-conosco{
     padding: 0px 0px;
     padding-bottom: 30px;
-    font-size: 28px;
+    font-size: 23px;
 }
 
 .container-main-fale-conosco{
