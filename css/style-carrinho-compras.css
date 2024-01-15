@@ -10,6 +10,8 @@
 
 .container-carrinho-de-compras span{
     padding: 0px 20px;
+
+
 }
 
 
@@ -36,5 +38,16 @@ color:  white;
 padding: 8px 15px;
 font-weight: 600;
 border: none;
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .container-carrinho-de-compras span{
+        font-size: 14px;
+    
+    
+    }
 
 }
