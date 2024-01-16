@@ -832,6 +832,14 @@ section{
  pointer-events: none;
 }
 
+.container-rastreio{
+    display: none;
+}
+
+#rastreio{
+    display: none;
+}
+
 }
 
 
