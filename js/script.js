@@ -56,7 +56,7 @@ document.addEventListener("click", function (event) {
 
 let currentIndex = 0;
 const totalSlides = document.querySelectorAll('.slide').length;
-const slidesPerPart = totalSlides / 2; // Assumindo que você tem duas partes de slides
+const slidesPerPart = totalSlides / 2; 
 
 function showSlide(index) {
   const slides = document.querySelector('.slides');
@@ -69,7 +69,7 @@ function showSlide(index) {
 function nextSlide() {
   currentIndex = (currentIndex + 1) % totalSlides;
 
-  // Se estiver na última parte de slides, retorne à primeira parte
+
   if (currentIndex === 1) {
     currentIndex+ 0.5;
   }else{
@@ -83,7 +83,7 @@ function prevSlide() {
   if (currentIndex > 0) {
     showSlide(currentIndex - 1);
   } else {
-    // Se estiver na segunda parte de slides, retorne à última parte
+  
     if (currentIndex >= slidesPerPart) {
       currentIndex = totalSlides - 1;
     }
