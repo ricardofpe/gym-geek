@@ -119,3 +119,7 @@ function prevSlide() {
         });
     });
 
+
+
+
+    // Automatização de Lista de Produtos //
