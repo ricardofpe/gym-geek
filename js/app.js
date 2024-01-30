@@ -182,3 +182,61 @@ console.log('conectou ao banco')
 })
 .catch((err) => console.log(err))
 
+
+
+
+
+
+
+const Produto = require('../models/Produto')
+
+
+
+
+// Rota para renderizar a página de produtos
+app.get('/', async (req, res) => {
+    try {
+      // Consultar produtos no banco de dados
+      const produtos = await Produto.find();
+  
+      // Renderizar a página com os dados dinâmicos
+      res.render('index', { produtos });
+    } catch (error) {
+      console.error(error);
+      res.status(500).send('Erro interno do servidor');
+    }
+  });
+  
+  // Configurar o mecanismo de modelo EJS
+  app.set('view engine', 'ejs');
+  
+
+  
+  app.post('/produtos', async (req, res) => {
+
+      try {
+        const novoProduto = await Produto.create(req.body);
+        res.status(201).json(novoProduto);
+      } catch (error) {
+        console.error(error);
+        res.status(500).send('Erro interno do servidor');
+      }
+
+     
+    });
+    
+    // Rota para listar todos os produtos
+    app.get('/produtos', async (req, res) => {
+      try {
+        const produtos = await Produto.find();
+        res.json(produtos);
+      } catch (error) {
+        console.error(error);
+        res.status(500).send('Erro interno do servidor');
+      }
+    });
+
+
+
+ 
+
